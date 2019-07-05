@@ -1,0 +1,37 @@
+<h1>Submit Data</h1>
+<form action="/insert" method="post">
+  <div>
+    <label for="username">userName:</label>
+    <input type="text" id="name" name="username">
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="email" name="name">
+  </div>
+  <div>
+    <label for="age">age:</label>
+    <input type="text" id="phoneNo" name="age">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<h1>Retrieve Data</h1>
+
+<form action="/" method="post">
+  <div>
+    <label for="username">username:</label>
+    <input type="text" id="name" name="username">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="data">
+  <p class="info">{{username}}</p>
+  <p class="info">{{name}}</p>
+  <p class="info">{{age}}</p>
+  <p class="info">{{password}}</p>
+</div>
